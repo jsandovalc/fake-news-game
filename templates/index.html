@@ -7,14 +7,15 @@
     <title>Verdad o bulo</title>
   </head>
   <body class="text-center">
-    <img src="{{ url_for('static', path='image1.png') }}" alt="" />
-    <h2>Una publicación de Facebook asegura que las farmacéuticas
+    <main role="main" class="inner">
+      <img src="{{ url_for('static', path='image1.png') }}" alt="" />
+      <p class="lead">Una publicación de Facebook asegura que las farmacéuticas
       trasnacionales crearon el coronavirus SARScov2 a partir del
       coronavirus canino con el objetivo de vender vacunas e
-      incrementar sus ganancias.</h2>
-    <img src="{{ url_for('static', path='thumbsup.png')}}" alt="" />
-    <img src="{{ url_for('static', path='thumbsdown.png')}}" alt="" />
-
+      incrementar sus ganancias.</p>
+      <img src="{{ url_for('static', path='thumbsup.png')}}" alt="" />
+      <img src="{{ url_for('static', path='thumbsdown.png')}}" alt="" />
+    </main>
     <!-- Not sure if I require the bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
