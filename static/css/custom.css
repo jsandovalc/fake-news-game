@@ -1,0 +1,18 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.quiz-img {
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.quiz-text {
+  padding-bottom: 1em;
+}
+
+.quiz-buttons {
+  padding-bottom: 100px;
+}
