@@ -1,3 +1,5 @@
+Simple game to promote fact-checking.
+
 # TODO
 - [ ] Retrieve quiz elements from sqlite database.
 - [ ] Show answer.
