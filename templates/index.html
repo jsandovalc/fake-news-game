@@ -13,7 +13,8 @@
         <div class="row">
           <div class="col-sm-2"></div>
           <div class="col-sm-8 quiz-img">
-            <img src="{{ url_for('static', path='image1.png') }}" alt="" />
+            <img src="{{ url_for('static', path=quiz_element.image) }}" alt="" />
+
           </div>
           <div class="col-sm-2"></div>
         </div>
@@ -21,10 +22,7 @@
       <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 quiz-text">
-          <p class="lead">Una publicación de Facebook asegura que las
-            farmacéuticas trasnacionales crearon el coronavirus
-            SARScov2 a partir del coronavirus canino con el objetivo
-            de vender vacunas e incrementar sus ganancias.</p>
+          <p class="lead">{{ quiz_element.description }}</p>
         </div>
         <div class="col-sm-2"></div>
       </div>

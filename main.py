@@ -27,9 +27,7 @@ elements = sa.Table(
     sa.Column("truth", sa.Boolean),
 )
 
-engine = sa.create_engine(
-    DATABASE_URL, connect_args={"check_same_thread": False}
-)
+engine = sa.create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 metadata.create_all(engine)
 
 
@@ -38,7 +36,6 @@ class Element(BaseModel):
     image: str
     description: str
     truth: bool
-
 
 
 @app.on_event("startup")
@@ -52,6 +49,10 @@ async def shutdown():
 
 
 @app.get("/")
-def index(request: Request):
-    # query = elements.select()
-    return templates.TemplateResponse("index.html", {"request": request})
+async def index(request: Request):
+    query = elements.select()
+
+    return templates.TemplateResponse(
+        "index.html",
+        {"request": request, "quiz_element": await database.fetch_one(query)},
+    )
