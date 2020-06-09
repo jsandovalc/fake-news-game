@@ -2,7 +2,7 @@ Simple game to promote fact-checking.
 
 # TODO
 - [ ] Retrieve quiz elements from sqlite database.
-- [ ] Show answer.
+- [ ] Show right or wrong answer after clic.
 - [ ] Add label to buttons (Verdad o bulo).
 - [ ] Adjust buttons images to mobile.
 - [ ] Test on mobile.
